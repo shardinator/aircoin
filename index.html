@@ -65,6 +65,8 @@
         position: sticky;
         top: 0;
         z-index: 10;
+        flex-wrap: wrap;
+        padding: 0.5rem;
     }
     nav a {
         color: #333;
@@ -75,6 +77,9 @@
         display: inline-block;
         transition: color 0.3s, transform 0.3s;
         position: relative;
+        text-align: center;
+        flex: 1 1 auto;
+        min-width: 120px;
     }
     nav a:hover {
         color: #0ABFBC;
@@ -156,6 +161,15 @@
     @media (max-width: 800px) {
         .card {
             flex: 1 1 100%;
+        }
+        
+        nav {
+            padding: 0.25rem;
+        }
+        nav a {
+            margin: 0.25rem;
+            padding: 0.75rem;
+            min-width: 140px;
         }
     }
 </style>
