@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Aircoin</title>
+<style>
+    /* Overall styling */
+    body {
+        margin: 0; 
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        background: linear-gradient(to bottom right, #f9fafc 0%, #e8f7fa 50%, #f9fafc 100%);
+        color: #333;
+        transition: background 0.5s ease-in-out;
+    }
+
+    /* Header */
+    header {
+        background: linear-gradient(135deg, #0ABFBC 0%, #2EB3D3 100%);
+        color: #fff; 
+        padding: 4rem 2rem;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+    }
+
+    /* Add a subtle decorative overlay in the header */
+    header::before {
+        content: "";
+        position: absolute;
+        top: 0; left:0; right:0; bottom:0;
+        background: radial-gradient(circle at 20% 20%, rgba(255,255,255,0.15) 0%, transparent 50%);
+        pointer-events: none;
+    }
+    header::after {
+        content: "";
+        position: absolute;
+        top: 0; left:0; right:0; bottom:0;
+        background: radial-gradient(circle at 80% 80%, rgba(255,255,255,0.1) 0%, transparent 50%);
+        pointer-events: none;
+    }
+
+    header h1 {
+        font-size: 3.5rem;
+        margin: 0 0 1rem 0;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    header p {
+        font-size: 1.3rem;
+        max-width: 600px;
+        margin: 0 auto;
+        line-height: 1.6;
+        font-weight: 300;
+    }
+
+    /* Navigation */
+    nav {
+        display: flex;
+        justify-content: center;
+        background: #ffffffdd;
+        backdrop-filter: blur(5px);
+        border-bottom: 1px solid #ddd;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+    }
+    nav a {
+        color: #333;
+        text-decoration: none;
+        font-weight: 500;
+        margin: 0 1rem;
+        padding: 1rem;
+        display: inline-block;
+        transition: color 0.3s, transform 0.3s;
+        position: relative;
+    }
+    nav a:hover {
+        color: #0ABFBC;
+        transform: translateY(-2px);
+    }
+
+    /* Content sections */
+    .content {
+        max-width: 1100px;
+        margin: 3rem auto;
+        padding: 0 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    /* Cards */
+    .card {
+        background: #fff;
+        flex: 1 1 calc(33% - 2rem);
+        min-width: 280px;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        position: relative;
+        overflow: hidden;
+    }
+
+    /* Add a subtle decorative gradient in the cards */
+    .card::before {
+        content: "";
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: radial-gradient(circle, rgba(14,191,188,0.08) 10%, transparent 70%);
+        transform: translate(0,0);
+        pointer-events: none;
+    }
+
+    .card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+    }
+
+    .card h2 {
+        color: #0ABFBC;
+        margin-bottom: 1rem;
+        font-size: 1.7rem;
+        font-weight: 600;
+    }
+
+    .card p {
+        font-size: 1rem;
+        line-height: 1.5;
+        color: #555;
+        font-weight: 300;
+    }
+
+    /* Footer */
+    footer {
+        background: #f0f2f5;
+        text-align: center;
+        padding: 2rem;
+        font-size: 0.9rem;
+        color: #555;
+    }
+
+    footer p {
+        margin: 0;
+        font-weight: 300;
+    }
+
+    /* Responsive */
+    @media (max-width: 800px) {
+        .card {
+            flex: 1 1 100%;
+        }
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Aircoin</h1>
+    <p>The price-stable, identity-secured digital currency, designed for everyone.</p>
+</header>
+
+<nav>
+    <a href="#features">Features</a>
+    <a href="#ubi">Universal Basic Income</a>
+    <a href="#how-it-works">How It Works</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="features" class="content">
+    <div class="card">
+        <h2>Price Stability</h2>
+        <p>Aircoin’s value remains stable in real terms, protecting you from volatility and ensuring predictable purchasing power.</p>
+    </div>
+    <div class="card">
+        <h2>Biometric Security</h2>
+        <p>Seamlessly verify your identity using advanced FaceID-like technology to ensure a secure and fair financial ecosystem.</p>
+    </div>
+    <div class="card">
+        <h2>No Reserve Currency</h2>
+        <p>Aircoin eliminates the need for traditional reserve currencies, simplifying global transactions and trade.</p>
+    </div>
+</section>
+
+<section id="ubi" class="content">
+    <div class="card" style="flex: 1 1 100%;">
+        <h2>Universal Basic Income</h2>
+        <p>With Aircoin, UBI distribution is built-in. Every verified individual receives a recurring, stable allocation of Aircoins, helping foster financial inclusion and economic dignity worldwide.</p>
+    </div>
+</section>
+
+<section id="how-it-works" class="content">
+    <div class="card">
+        <h2>Algorithmic Stability</h2>
+        <p>An algorithmic peg to a basket of real-world goods ensures Aircoin’s value remains consistent, regardless of market speculation.</p>
+    </div>
+    <div class="card">
+        <h2>Decentralized Governance</h2>
+        <p>Aircoin’s community-driven governance model empowers stakeholders to shape policies, rules, and ongoing improvements.</p>
+    </div>
+    <div class="card">
+        <h2>Global Access</h2>
+        <p>As a digital-first currency, Aircoin transcends borders. Anyone with a smartphone and biometric verification can participate.</p>
+    </div>
+</section>
+
+<section id="contact" class="content">
+    <div class="card" style="flex: 1 1 100%;">
+        <h2>Get in Touch</h2>
+        <p>Want to learn more or get involved? Contact me at <a href="https://www.linkedin.com/in/ankur-s-803a5b4/">LinkedIn</a> or  <a href="https://x.com/shardinator">X/Twitter</a>.</p>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Aircoin. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
